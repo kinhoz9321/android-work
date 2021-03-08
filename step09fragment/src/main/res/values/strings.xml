@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Step09Fragment</string>
+    <string name="msg">클릭했넹?</string>
+</resources>

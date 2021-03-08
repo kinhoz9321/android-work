@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ff00">
+    <!--
+        textView의 text를 바꿔주는 작업하기
+        set textView 를 가져와서 숫자를 점점 증가시키는 작업하기
+    -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="0"
+        android:textSize="20sp"
+        android:gravity="center"/>
+</LinearLayout>

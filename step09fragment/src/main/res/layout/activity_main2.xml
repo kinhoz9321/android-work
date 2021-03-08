@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    orientation * 꼭 설정해줘야함.
+    LinearLayout / TextView / Fragment / Button 객체 생성
+    화면이 구성 되어야지만 객체가 생성된다.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:background="#cccccc"
+        android:id="@+id/textConsole"/>
+    <!--
+        Fragment
+        액티비티의 관리하에 있음
+        액티비티가 활성화 되어야만 Fragment 도 객체가 생성되고, 활성화 된다.
+        액티비티가 비활성화 되면 Fragment 도 비활성화 된다.
+        액티비티 관리하에 있는 미니 컨트롤러 역할. (화면의 일부 관리)
+        Fragment는 참조값을 얻어오는 방법이 다름. (View가 아니기 때문.) / View를 가지고 있기는 하지만 View 는 아니다.
+    -->
+    <fragment
+        android:id="@+id/guraFragment"
+        android:name="com.example.step09fragment.GuraFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="리셋"
+        android:id="@+id/resetBtn"/>
+</LinearLayout>

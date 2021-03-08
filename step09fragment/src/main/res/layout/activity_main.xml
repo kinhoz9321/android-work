@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <!--
+        레이아웃의 일원으로 프레그먼트 사용
+
+        <핵심>
+        android:id="@+id/fragment2"
+        android:id="@+id/fragment3"
+        두개는 서로 다른 독립적인 프래그먼트
+
+        GuraFragment를 만들어놓고, MainActivity, SubActivity ...
+        여러 액티비티에 독립적으로 가져다 놓고 쓸 수 있다.
+        유지보수가 편하고, 여러곳에서 사용할 수 있음.
+
+        Fragment는 자기만의 동작을 가지고 있는 view처럼 사용할 수 있다.
+        Fragement는 액티비티에 의존 ***
+
+        Fragment lifecycle
+        on Create View() 에서 많은 작업을 한다.
+        -->
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.example.step09fragment.GuraFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+
+    <fragment
+        android:id="@+id/fragment3"
+        android:name="com.example.step09fragment.GuraFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+</LinearLayout>
