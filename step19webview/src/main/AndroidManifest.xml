@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.step19webview">
+
+    <!-- 인터넷 사용 허가 퍼미션 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 외부 저장장치(sdcard) 를 사용하겠다는 허가 얻기 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.Light.NoActionBar"
+        android:usesCleartextTraffic="true">
+
+        <meta-data android:name="android.webkit.WebView.EnableSafeBrowsing" android:value="false"/>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
+<!--
+webView를 자유롭게 사용하기 위해 필요한 3가지 설정
+http:// https:// 를 사용하는데 차이가 있다. 이중 2개를 넣어주지 않으면 뭔가 사용을 못한다. (?)
+
+<uses-permission android:name="android.permission.INTERNET"/>
+android:usesCleartextTraffic="true"
+<meta-data android:name="android.webkit.WebView.EnableSafeBrowsing" android:value="false"/>
+-->
