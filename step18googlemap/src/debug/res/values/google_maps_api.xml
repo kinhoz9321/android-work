@@ -1,0 +1,25 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+    복사 크롬 브라우저에 구글 로그인 된 상태로 주소창 붙여넣기
+    = 0B:EF:DF:76:18:43:7C:7F:6B:D8:DC:A2:14:5A:79:9D:BE:13:DD:C0 (내 컴퓨터의 지문)
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=0B:EF:DF:76:18:43:7C:7F:6B:D8:DC:A2:14:5A:79:9D:BE:13:DD:C0%3Bcom.example.step18googlemap
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    com.example.step18googlemap
+
+    SHA-1 certificate fingerprint:
+    0B:EF:DF:76:18:43:7C:7F:6B:D8:DC:A2:14:5A:79:9D:BE:13:DD:C0
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyD3RYb5SntMAYxG9lTeLyLI9meLiy1iKbY</string>
+</resources>
