@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.step14sharedpref.MainActivity">
+    <!--
+    showAsAction="always 항상 보이게 / never 안보이게 / ifroom 만약 공간이 있다면"
+    -->
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item android:id="@+id/one"
+        android:orderInCategory="1"
+        android:title="하나"
+        app:showAsAction="never"/>
+    <item android:id="@+id/two"
+        android:orderInCategory="2"
+        android:title="두울"
+        app:showAsAction="never"/>
+</menu>
