@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Step11BottomNavi</string>
+    <string name="title_home">홈</string>
+    <string name="title_dashboard">작업실</string>
+    <string name="title_notifications">알림</string>
+</resources>

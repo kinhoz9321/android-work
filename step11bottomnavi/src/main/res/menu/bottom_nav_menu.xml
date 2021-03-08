@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+    Menu 에서 '@drawable'/ic_home_black_24dp 해서 drawable 의 문서를 참조하고 있다.
+    -->
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_saturn_orbit"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_rocket"
+        android:title="@string/title_dashboard" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/ic_pizza_slice"
+        android:title="@string/title_notifications" />
+
+</menu>
