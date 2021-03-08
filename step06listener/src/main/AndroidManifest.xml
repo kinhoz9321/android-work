@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.step06listener">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Hello">
+        <activity android:name=".MainActivity">
+
+        </activity>
+        <!-- 테스트를 위한 액티비티 추가로 등록하기 (자동완성하기) intent-filter 옮김. -->
+        <activity android:name=".MainActivity2">
+
+        </activity>
+        <activity android:name=".MainActivity3">
+
+        </activity>
+        <activity android:name=".MainActivity4">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

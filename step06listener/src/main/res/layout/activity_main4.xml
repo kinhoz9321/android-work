@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    LinearLayout Button 안드로이드에서 기본 제공해주는 클래스
+    총 4개의 객체를 생성
+    res에 정의된 모든 것은 R class 에서 관리된다.
+    R 클래스 안에서 자원으로 등록되고 유일한 숫자 부여받음. 상수. (자동생성)
+    어디선가 이 값을 참조해야겠다. R.drawable.gura 참조 (그림참고)
+    id조차도 숫자값으로 관리가 된다.
+    R class 에 대한 이해. 안드로이드에서 상당히 중요하다.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--
+    id는 xml 파일 전체(activity_main, activity_main4)에서 유일할 필요가 없고, 화면 하나에서면 유일하면 된다. ***
+    id는 주민번호를 부여한다는 느낌. 문자값을 썼지만 숫자값이 생김.
+    -->
+    <Button
+        android:id="@+id/sendBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="전송"
+        app:backgroundTint="#4CAF50" />
+
+    <Button
+        android:id="@+id/updateBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="수정"
+        app:backgroundTint="#8BC34A" />
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="삭제"
+        app:backgroundTint="#CDDC39" />
+</LinearLayout>
