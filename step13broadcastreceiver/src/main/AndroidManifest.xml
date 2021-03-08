@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.step13broadcastreceiver">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Hello">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+        방송 수신자 객체 (BroadcastReceiver) 등록하기 / .은 기본패키지(com.example.step13broadcastreceiver)라는 의미 / 긴문장을 .으로 생략
+        특별한 이유가 없으면 반드시 작성해야 하는 옵션
+        android:enabled="true" android:exported="true"
+        에어플레인모드가 켜졌을 때 .MyReceiver 켜진다.
+        -->
+        <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.AIRPLANE_MODE"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
